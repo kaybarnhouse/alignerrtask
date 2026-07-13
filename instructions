@@ -1,4 +1,4 @@
-Design a hydrofoil aft flap configuration that minimizes drag while maintaining the required lift target.
+Design an aft flap configuration for a hydrofoil that minimizes drag while meeting the required lift target.
 
 The design variables are:
 - flap deflection
@@ -6,6 +6,6 @@ The design variables are:
 - chord fraction
 - blend radius
 
-The configuration must satisfy all bounds and any stated geometric constraints. The evaluator will score candidates based on drag performance, feasibility, and convergence quality. Better designs achieve lower drag at the required lift with no constraint violations.
+The submitted configuration must stay within all specified bounds and satisfy any geometric feasibility constraints. Candidate designs will be evaluated by their drag performance at the required lift condition, with penalties for infeasible geometry or non-convergent results.
 
-Return a single valid design configuration in the required output format.
+Return exactly one valid design configuration in the required output format.
