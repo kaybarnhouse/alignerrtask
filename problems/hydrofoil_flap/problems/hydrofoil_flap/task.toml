@@ -1,5 +1,9 @@
-problems/hydrofoil_flap/
-├── instruction.md
-├── compute_score.py
-├── solve.sh
-└── task.toml
+name = "hydrofoil_flap"
+description = "Optimize a hydrofoil aft flap for minimum drag at the required lift target."
+
+instruction = "instruction.md"
+solver = "solve.sh"
+scorer = "compute_score.py"
+
+[run]
+timeout_seconds = 600
